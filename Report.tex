@@ -1,0 +1,50 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[inline]{enumitem}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage[nottoc]{tocbibind}
+\usepackage{caption}
+\usepackage{enumerate}
+\graphicspath{{images/}}
+\usepackage{nomencl}
+\usepackage{algorithm,algorithmic} 
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+
+\geometry{
+	a4paper,
+	total={160 mm,245 mm},
+	left = 25 mm,
+	top = 30 mm
+	}
+
+
+\begin{document}
+\pagenumbering{roman}
+\include{first_page/first}
+\include{first_page/certificate}
+\include{Acknowledgement/acknowledgement}
+\include{Abstract/abstract}
+
+
+\tableofcontents
+\listoffigures
+\listoftables
+\include{nomenclature/nomen}
+\pagebreak
+\pagenumbering{arabic} 
+
+\include{Chapter1/introduction}
+\include{Chapter2/literature}
+\include{Chapter3/Software}
+\include{Chapter4/dataset_analysis}
+\include{Chapter5/architecture}
+\include{Chapter6/conclusion}
+
+\newpage
+\include{References/references}
+
+\end{document}
